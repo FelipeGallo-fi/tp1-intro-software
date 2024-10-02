@@ -16,7 +16,7 @@ ordenar_anios(){
 
             REGEX_ANIOS_MINS="$anio,$mins\$"
 
-            anios_por_MINUTOS=$(grep -E "$REGEX_ANIOS_MINS" "$archivo" );
+            anios_por_minutos=$(grep -E "$REGEX_ANIOS_MINS" "$archivo" );
 
             if [[ ! -z "$anios_por_minutos" ]]; then
             lineas_ordenadas+="$anios_por_minutos"$'\n'
